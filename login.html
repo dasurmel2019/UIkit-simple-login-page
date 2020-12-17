@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UIkit Simple Login-Page</title>
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <style>
+  .n01-input {
+    background: none!important;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px dashed rgba(255,255,255,.2);
+  }
+  .n01-submit {
+    cursor: pointer;
+  }
+  .n01-move-up {
+  	transition: transform 1s;
+  }
+  .n01-move-up:hover {
+  	transform: translate(0px, -4px);
+  }
+  </style>
+</head>
+<body>
+  <div class="uk-grid uk-child-width-1-2@m uk-grid-collapse">
+    <div class="uk-background-secondary uk-background-cover uk-visible@m" style="background-image: url('https://picsum.photos/2000/1000/?image=336');" uk-height-viewport>
+    </div>
+    <div class="uk-background-secondary uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+      <div class="uk-light">
+        <h2>Please log in</h2>
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                <input class="uk-input n01-input" type="text">
+            </div>
+        </div>
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                <input class="uk-input n01-input" type="password">
+            </div>
+        </div>
+        <div class="uk-margin">
+          <input type="submit" name="" value="LOGIN" class="uk-input uk-border-rounded n01-submit n01-move-up">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
